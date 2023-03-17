@@ -1,5 +1,3 @@
-# MobileAppGroup
-
 # Group Members 
 
 | Names           |      ID       |section |
@@ -10,7 +8,7 @@
 | Yohannes Ahunm  |  UGR/4045/13  |   1    |
 | Yohannes Bekele |  UGR/3361/13  |   4    |
 
-# Tenaye
+# Project Title => Tenaye (Medical App)
 
 Introducing "Tenaye," a comprehensive medical app that helps you access quality healthcare services with ease.
 
