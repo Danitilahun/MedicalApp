@@ -10,7 +10,7 @@
 
 # Project Title => Tenaye (Medical App)
 
-Introducing "Tenaye," a comprehensive medical app that helps you access quality healthcare services with ease.
+Introducing **Tenaye** , a comprehensive medical app that helps you access quality healthcare services with ease.
 
 
 Our app offers a simple and user-friendly interface that allows you to easily book appointments with doctors and healthcare providers. With just a few taps, you can browse through available appointments, choose the time that suits you, and receive confirmation once your appointment is approved. Also, the platform enables you to communicate with your doctor through audio or chat and get the care you need.
