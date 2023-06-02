@@ -14,6 +14,7 @@ router.delete("/logout", logout)
 // We handle each type of user in different collection for performance(retrival)
 // Deleting an account is done after authorization
 
+
 router.post("/refreshToken", verifyRefreshToken, refreshToken)
 
 module.exports = router
