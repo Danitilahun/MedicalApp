@@ -26,6 +26,7 @@ class DoctorProfileBloc extends Bloc<DoctorProfileEvent, DoctorProfileState> {
       (doctor) => emit(DoctorProfileLoadedState(doctor)),
     );
   }
+  
 
   Future<void> _updateProfileEvent(
       UpdateProfileEvent event, Emitter<DoctorProfileState> emit) async {
