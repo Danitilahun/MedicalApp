@@ -18,6 +18,7 @@ const storage = multer.diskStorage({
   },
 });
 
+
 // Set up multer middleware for handling file uploads
 const upload = multer({ storage: storage });
 
@@ -35,6 +36,7 @@ router.put(
   authorize("user"),
   patient.updateProfile
 );
+
 router.put(
   "/profileImage/:id",
   verifyAccessToken,
