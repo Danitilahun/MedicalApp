@@ -66,6 +66,7 @@ router.post(
   authorize("user"),
   appointmentController.createAppointment
 );
+
 // router.get("/appointments/:appointmentId", verifyAccessToken, authorize("user"), appointmentController.getAppointmentById);
 router.get(
   "/appointments/:userId",
