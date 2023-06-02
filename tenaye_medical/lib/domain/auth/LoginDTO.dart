@@ -6,6 +6,7 @@ class LoginDTO {
     required this.email,
     required this.password,
   });
+  
 
   factory LoginDTO.fromJson(Map<String, dynamic> json) {
     return LoginDTO(
