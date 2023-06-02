@@ -34,7 +34,7 @@ const signRefreshToken = (userId, userRole) => {
 
     jwt.sign(payload, process.env.JWT_SECRET_REFRESH, options,  async (err, token) => {
       if (err) {
-        console.log(err);
+        
         return reject(createError.InternalServerError());
       }
         const userToken = await UserToken.findOne({ userId: userId });
