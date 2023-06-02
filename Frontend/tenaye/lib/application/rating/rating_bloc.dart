@@ -12,6 +12,7 @@ class RatingBloc extends Bloc<RatingEvent, RatingState> {
   final RatingRepository ratingRepository = RatingRepository();
 
   RatingBloc() : super(RatingInitial()) {
+    
     on<PostRatingEvent>(_postRating);
     on<GetDoctorRatingsEvent>(_getDoctorRatings);
     on<DeleteRatingEvent>(_deleteRating);
