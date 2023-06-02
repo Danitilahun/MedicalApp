@@ -11,6 +11,7 @@ module.exports = {
         roles: req.body.roles,
       });
 
+      
       if (req.file) {
         print(req.file.path);
         doctor.profileImage = req.file.path;
