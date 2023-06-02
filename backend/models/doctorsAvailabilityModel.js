@@ -9,7 +9,7 @@ const availabilitySchema = new mongoose.Schema({
       time: { type: String, required: true },
     },
   ],
-  // Other fields if needed
+  
 });
 
 module.exports = mongoose.model("Availability", availabilitySchema);
