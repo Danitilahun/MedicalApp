@@ -22,6 +22,7 @@ class RatingRepository {
     try {
       final List<Rating> ratings =
           await ratingDataProvider.getDoctorRatings(doctorId);
+      
       return Right(ratings);
     } catch (e) {
       return Left(RatingException('Failed to get doctor ratings: $e'));
