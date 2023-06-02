@@ -16,6 +16,7 @@ class ProfileErrorState extends ProfileState {
   ProfileErrorState(this.message);
 }
 
+
 class ProfileDeletedState extends ProfileState {}
 
 class ProfileUpdateInProgressState extends ProfileState {}
