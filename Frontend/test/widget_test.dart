@@ -39,8 +39,7 @@ testWidgets('Edit Doctor Profile form test', (WidgetTester tester) async {
   await tester.enterText(feeField, '100');
   await tester.enterText(cityField, 'New York');
   await tester.enterText(countryField, 'USA');
-  await tester.enterText(countryField, 'USA');
-
+  
 
   await tester.tap(find.text('Save'));
 
