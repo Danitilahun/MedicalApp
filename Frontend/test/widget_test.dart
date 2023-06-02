@@ -39,6 +39,8 @@ testWidgets('Edit Doctor Profile form test', (WidgetTester tester) async {
   await tester.enterText(feeField, '100');
   await tester.enterText(cityField, 'New York');
   await tester.enterText(countryField, 'USA');
+  await tester.enterText(countryField, 'USA');
+
 
   await tester.tap(find.text('Save'));
 
@@ -110,6 +112,7 @@ testWidgets('Profile screen test', (WidgetTester tester) async {
 
   expect(find.byType(LoginPage), findsOneWidget);
 });
+
 late MockProfileBloc mockProfileBloc;
   setUp(() {
     mockProfileBloc = MockProfileBloc();
