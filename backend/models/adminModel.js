@@ -22,6 +22,7 @@ const adminSchema = mongoose.Schema(
         message: "Invalid email format",
       },
     },
+    
     password: {
       type: String,
       required: true,
