@@ -12,6 +12,7 @@ class Rating {
     required this.message,
     required this.rating,
   });
+  
 
   factory Rating.fromJson(Map<String, dynamic> json) {
     return Rating(
