@@ -35,6 +35,7 @@ class DoctorProfileImageUpdateSuccessState extends DoctorProfileState {
 class DoctorProfileCertificateUpdateInProgressState
     extends DoctorProfileState {}
 
+
 class DoctorProfileCertificateUpdateSuccessState extends DoctorProfileState {
   final Doctor doctor;
 
