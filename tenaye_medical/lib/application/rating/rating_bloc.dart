@@ -21,6 +21,7 @@ class RatingBloc extends Bloc<RatingEvent, RatingState> {
   Future<void> _postRating(
       PostRatingEvent event, Emitter<RatingState> emit) async {
     emit(RatingLoading());
+    
     try {
       await ratingRepository.postRating(event.rating);
       emit(RatingSuccess([]));
@@ -33,6 +34,7 @@ class RatingBloc extends Bloc<RatingEvent, RatingState> {
       GetDoctorRatingsEvent event, Emitter<RatingState> emit) async {
     emit(RatingLoading());
     final result = await ratingRepository.getDoctorRatings(event.doctorId);
+    
     result.fold(
       (failure) => emit(RatingFailure(
           GetDoctorRatingsException('Failed to get doctor ratings: $failure'))),
@@ -45,6 +47,7 @@ class RatingBloc extends Bloc<RatingEvent, RatingState> {
     emit(RatingLoading());
     try {
       await ratingRepository.deleteRating(event.ratingId);
+      
       emit(RatingSuccess([]));
     } catch (e) {
       emit(RatingFailure(DeleteRatingException('Failed to delete rating: $e')));

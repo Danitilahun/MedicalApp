@@ -18,6 +18,7 @@ class PostRatingEvent extends RatingEvent {
   List<Object?> get props => [rating];
 }
 
+
 class GetDoctorRatingsEvent extends RatingEvent {
   final String doctorId;
 
@@ -26,6 +27,7 @@ class GetDoctorRatingsEvent extends RatingEvent {
   @override
   List<Object?> get props => [doctorId];
 }
+
 
 class DeleteRatingEvent extends RatingEvent {
   final String ratingId;
