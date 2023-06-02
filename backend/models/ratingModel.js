@@ -6,6 +6,7 @@ const ratingSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  
   userId: { type: String, required: true },
   rating: { type: Number, min: 1, max: 5, required: true },
   message: { type: String, max: 500 },
