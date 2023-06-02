@@ -15,6 +15,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     on<UpdateProfileImageEvent>(_updateProfileImageEvent);
     on<DeleteAccountEvent>(_deleteAccountEvent);
   }
+  
 
   Future<void> _getUserEvent(
       GetUserEvent event, Emitter<ProfileState> emit) async {
