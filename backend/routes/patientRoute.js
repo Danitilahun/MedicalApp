@@ -129,6 +129,7 @@ router.get(
   authorize("user"),
   medicationController.getMedication
 );
+
 router.get(
   "/medications",
   verifyAccessToken,
