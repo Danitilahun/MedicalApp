@@ -52,4 +52,13 @@ class DoctorRepository {
     }
   }
 
+  Future<Either<DoctorFailure, void>> deleteAccount() async {
+    try {
+      await doctorDataProvider.deleteAccount();
+      return Right(null);
+      
+    } catch (e) {
+      return Left(DoctorFailure(e.toString()));
+    }
+  }
 }
