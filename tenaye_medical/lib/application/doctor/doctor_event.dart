@@ -11,6 +11,7 @@ class UpdateProfileEvent extends DoctorProfileEvent {
   UpdateProfileEvent(this.doctor);
 }
 
+
 class UpdateProfileImageEvent extends DoctorProfileEvent {
   final String imagePath;
 
