@@ -7,6 +7,7 @@ class LoggedIn extends AuthEvent {
   final String? role;
   final String? id;
   final String? token;
+  
 
   LoggedIn({this.role, this.id, this.token});
 }
