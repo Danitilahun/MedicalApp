@@ -29,6 +29,7 @@ const adminSchema = mongoose.Schema(
       min: 4,
       max: 1028,
     },
+    
     roles: {
       type: String,
       enum: ["user", "doctor", "admin"],
