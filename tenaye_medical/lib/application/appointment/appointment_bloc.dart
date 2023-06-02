@@ -21,7 +21,16 @@ class AppointmentBloc extends Bloc<AppointmentEvent, AppointmentState> {
       );
     });
 
-    
+    on<GetAppointmentsEvent>((event, emit) async {
+      emit(AppointmentLoading());
+
+      final result = await appointmentRepository.getAppointments();
+
+      result.fold(
+        (failure) => emit(AppointmentFailure(failure.message)),
+        (appointments) => emit(AppointmentSuccess(appointments)),
+      );
+    });
 
     on<RescheduleAppointmentEvent>((event, emit) async {
       emit(AppointmentLoading());
