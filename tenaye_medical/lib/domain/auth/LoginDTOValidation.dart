@@ -27,6 +27,7 @@ class LoginDTOValidation {
 
   static Either<String, String> _validateEmail(String email) {
     final emailRegex = r'^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$';
+    
     final RegExp regex = RegExp(emailRegex);
     if (!regex.hasMatch(email)) {
       return Left('Invalid email format.');
