@@ -28,6 +28,7 @@ class RatingFailure extends RatingState {
 
   RatingFailure(this.error);
 
+  
   @override
   List<Object?> get props => [error];
 }
