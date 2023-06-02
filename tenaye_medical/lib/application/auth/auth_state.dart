@@ -4,6 +4,7 @@ class AuthInitial extends AuthState {}
 
 class AuthLoading extends AuthState {}
 
+
 class Authenticated extends AuthState {
   final String role;
   final String id;
