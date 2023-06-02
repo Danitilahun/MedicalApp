@@ -16,6 +16,8 @@ class RatingRepository {
       return Left(RatingException('$e'));
     }
   }
+  
+  
 
   Future<Either<RatingException, List<Rating>>> getDoctorRatings(
       String doctorId) async {
