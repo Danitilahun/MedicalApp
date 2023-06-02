@@ -12,6 +12,7 @@ class DoctorRepository {
     try {
       final doctor = await doctorDataProvider.getDoctor();
       return Right(doctor);
+      
     } catch (e) {
       return Left(DoctorFailure(e.toString()));
     }
@@ -21,6 +22,7 @@ class DoctorRepository {
     try {
       final updatedDoctor = await doctorDataProvider.updateProfile(doctor);
       return Right(updatedDoctor);
+      
     } catch (e) {
       return Left(DoctorFailure(e.toString()));
     }
@@ -32,6 +34,7 @@ class DoctorRepository {
       final updatedDoctor =
           await doctorDataProvider.updateProfileImage(imagePath);
       return Right(updatedDoctor);
+      
     } catch (e) {
       return Left(DoctorFailure(e.toString()));
     }
@@ -43,6 +46,7 @@ class DoctorRepository {
       final updatedDoctor =
           await doctorDataProvider.updateCertificate(certificatePath);
       return Right(updatedDoctor);
+      
     } catch (e) {
       return Left(DoctorFailure(e.toString()));
     }
@@ -52,6 +56,7 @@ class DoctorRepository {
     try {
       await doctorDataProvider.deleteAccount();
       return Right(null);
+      
     } catch (e) {
       return Left(DoctorFailure(e.toString()));
     }
