@@ -79,6 +79,7 @@ router.delete(
   authorize("user"),
   appointmentController.deleteAppointment
 );
+
 router.patch(
   "/appointments/:appointmentId",
   verifyAccessToken,
