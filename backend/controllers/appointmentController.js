@@ -22,6 +22,7 @@ module.exports = {
     }
   },
 
+  
   getAppointmentById: async (req, res) => {
     try {
       const { appointmentId } = req.params;
