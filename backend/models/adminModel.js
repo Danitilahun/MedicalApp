@@ -14,6 +14,7 @@ const adminSchema = mongoose.Schema(
       min: 5,
       max: 35,
       validate: {
+        
         validator: (value) => {
           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           return emailRegex.test(value);
