@@ -14,7 +14,6 @@ const signAccessToken = (userId, userRole) => {
 
     jwt.sign(payload, process.env.JWT_SECRET_ACCESS, options, (err, token) => {
       if (err) {
-        
         return reject(createError.InternalServerError());
       }
       resolve(token);
