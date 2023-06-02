@@ -13,7 +13,14 @@ class DoctorInitial extends DoctorState {}
 
 class DoctorsLoading extends DoctorState {}
 
+class DoctorsLoaded extends DoctorState {
+  final List<Doctor> doctors;
 
+  const DoctorsLoaded(this.doctors);
+
+  @override
+  List<Object> get props => [doctors];
+}
 
 class DoctorsLoadFailure extends DoctorState {
   final DoctorFailure failure;
