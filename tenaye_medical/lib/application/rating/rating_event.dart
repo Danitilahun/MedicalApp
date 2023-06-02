@@ -18,6 +18,7 @@ class PostRatingEvent extends RatingEvent {
   List<Object?> get props => [rating];
 }
 
+
 class GetDoctorRatingsEvent extends RatingEvent {
   final String doctorId;
 
