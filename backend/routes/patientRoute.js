@@ -13,11 +13,11 @@ const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "public/images");
   },
-  
   filename: function (req, file, cb) {
     cb(null, Date.now() + path.extname(file.originalname));
   },
 });
+
 
 // Set up multer middleware for handling file uploads
 const upload = multer({ storage: storage });
@@ -28,7 +28,6 @@ router.get(
   authorize("user"),
   patient.getProfile
 );
-
 // Updates patient profile including USERNAME and PASSWORD here
 router.put(
   "/profile/:id",
@@ -36,6 +35,7 @@ router.put(
   authorize("user"),
   patient.updateProfile
 );
+
 router.put(
   "/profileImage/:id",
   verifyAccessToken,
@@ -66,6 +66,7 @@ router.post(
   authorize("user"),
   appointmentController.createAppointment
 );
+
 // router.get("/appointments/:appointmentId", verifyAccessToken, authorize("user"), appointmentController.getAppointmentById);
 router.get(
   "/appointments/:userId",
@@ -73,6 +74,7 @@ router.get(
   authorize("user"),
   appointmentController.getAppointmentsByUserId
 );
+
 router.delete(
   "/appointments/:appointmentId",
   verifyAccessToken,
@@ -127,6 +129,7 @@ router.get(
   authorize("user"),
   medicationController.getMedication
 );
+
 router.get(
   "/medications",
   verifyAccessToken,
