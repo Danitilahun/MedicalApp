@@ -6,6 +6,7 @@ class RegisterDTOValidation {
       String email, String username, String password) {
     if (email.isEmpty) {
       return Left('Email is required.');
+      
     }
 
     if (username.isEmpty) {
