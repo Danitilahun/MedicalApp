@@ -30,6 +30,7 @@ class UserRepository {
     try {
       final updatedUser = await userDataProvider.updateProfileImage(imagePath);
       return Right(updatedUser);
+      
     } catch (e) {
       return Left(UserFailure(e.toString()));
     }

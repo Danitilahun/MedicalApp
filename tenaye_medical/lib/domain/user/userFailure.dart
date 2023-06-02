@@ -4,6 +4,7 @@ class UserFailure {
   UserFailure(this.message);
 
   @override
+  
   String toString() {
     return 'UserFailure: $message';
   }
