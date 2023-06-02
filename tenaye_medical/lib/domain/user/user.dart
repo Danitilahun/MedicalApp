@@ -21,6 +21,7 @@ class User {
     this.accessToken = "",
   });
 
+  
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json['_id'],
