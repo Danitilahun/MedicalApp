@@ -91,6 +91,7 @@ module.exports = {
           res.status(500).send(error);
         }
       },
+  
 
       getAllDoctors:  async (req, res) => {
         try {
