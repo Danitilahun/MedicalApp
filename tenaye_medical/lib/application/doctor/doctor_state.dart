@@ -10,11 +10,7 @@ class DoctorProfileLoadedState extends DoctorProfileState {
   DoctorProfileLoadedState(this.doctor);
 }
 
-class DoctorProfileErrorState extends DoctorProfileState {
-  final String message;
 
-  DoctorProfileErrorState(this.message);
-}
 
 class DoctorProfileUpdateInProgressState extends DoctorProfileState {}
 
