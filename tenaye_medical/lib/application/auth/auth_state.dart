@@ -12,6 +12,7 @@ class Authenticated extends AuthState {
   Authenticated(this.role, this.id);
 }
 
+
 class UnAuthenticated extends AuthState {}
 
 class AuthLoggingOut extends AuthState {}
