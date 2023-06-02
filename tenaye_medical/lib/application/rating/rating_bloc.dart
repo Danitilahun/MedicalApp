@@ -34,6 +34,7 @@ class RatingBloc extends Bloc<RatingEvent, RatingState> {
       GetDoctorRatingsEvent event, Emitter<RatingState> emit) async {
     emit(RatingLoading());
     final result = await ratingRepository.getDoctorRatings(event.doctorId);
+    
     result.fold(
       (failure) => emit(RatingFailure(
           GetDoctorRatingsException('Failed to get doctor ratings: $failure'))),
