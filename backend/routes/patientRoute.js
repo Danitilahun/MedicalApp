@@ -73,6 +73,7 @@ router.get(
   authorize("user"),
   appointmentController.getAppointmentsByUserId
 );
+
 router.delete(
   "/appointments/:appointmentId",
   verifyAccessToken,
