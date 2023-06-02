@@ -28,6 +28,7 @@ class GetDoctorRatingsEvent extends RatingEvent {
   List<Object?> get props => [doctorId];
 }
 
+
 class DeleteRatingEvent extends RatingEvent {
   final String ratingId;
 
