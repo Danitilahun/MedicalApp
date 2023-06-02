@@ -11,6 +11,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
   AuthBloc() : super(AuthInitial()) {
     initializeSharedPreferences();
+    
     on<CheckLogIn>((event, emit) async {
       final bool hasToken = sharedPreferences.containsKey('accessToken');
       if (hasToken) {
