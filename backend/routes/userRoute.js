@@ -7,6 +7,7 @@ router.post("/signup",  signup);
 router.post("/login", login);
 router.delete("/logout", logout)
 
+
 //        Note!!!
 // Changing username/password and Deleting an account is implemented 
 // in each specific user's route(patient, doctor and admin)
