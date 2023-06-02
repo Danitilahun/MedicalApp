@@ -9,6 +9,7 @@ class AuthException implements Exception {
   }
 }
 
+
 class EmailAlreadyInUseException extends AuthException {
   EmailAlreadyInUseException() : super('Email is already in use.');
 }
