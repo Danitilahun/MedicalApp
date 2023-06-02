@@ -11,7 +11,6 @@ const appointmentSchema = new mongoose.Schema({
   message: { type: String, default: "" },
   reply: { type: String, default: "" },
   bookDate: { type: String, required: true },
-  
   progress: {
     type: String,
     enum: ["completed", "cancled", "waiting", "approved"],
