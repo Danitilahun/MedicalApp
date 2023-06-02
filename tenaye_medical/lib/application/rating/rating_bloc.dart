@@ -21,6 +21,7 @@ class RatingBloc extends Bloc<RatingEvent, RatingState> {
   Future<void> _postRating(
       PostRatingEvent event, Emitter<RatingState> emit) async {
     emit(RatingLoading());
+    
     try {
       await ratingRepository.postRating(event.rating);
       emit(RatingSuccess([]));
