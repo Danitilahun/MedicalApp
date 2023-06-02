@@ -47,6 +47,7 @@ class RatingBloc extends Bloc<RatingEvent, RatingState> {
     emit(RatingLoading());
     try {
       await ratingRepository.deleteRating(event.ratingId);
+      
       emit(RatingSuccess([]));
     } catch (e) {
       emit(RatingFailure(DeleteRatingException('Failed to delete rating: $e')));
