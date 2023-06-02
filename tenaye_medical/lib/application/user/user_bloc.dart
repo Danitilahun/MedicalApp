@@ -36,6 +36,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       (user) => emit(ProfileLoadedState(user)),
     );
   }
+  
 
   Future<void> _updateProfileImageEvent(
       UpdateProfileImageEvent event, Emitter<ProfileState> emit) async {
