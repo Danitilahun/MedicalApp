@@ -15,6 +15,7 @@ class GetDoctorRatingsException extends RatingException {
   GetDoctorRatingsException(String message) : super(message);
 }
 
+
 class EditRatingException extends RatingException {
   EditRatingException(String message) : super(message);
 }
