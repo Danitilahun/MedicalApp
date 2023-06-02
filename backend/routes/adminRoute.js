@@ -7,6 +7,7 @@ const medicationController = require("../controllers/medicationController");
 const multer = require("multer");
 const path = require("path");
 
+
 // Medication Image
 const medicationStorage = multer.diskStorage({
   destination: function (req, file, cb) {
