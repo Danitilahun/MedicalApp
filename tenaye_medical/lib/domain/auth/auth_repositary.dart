@@ -24,6 +24,7 @@ class AuthRepository {
     try {
       print({"in repo", email, password, username});
       final user = await authDataProvider.register(email, password, username);
+      
       return Right(user);
     } catch (e) {
       return Left(AuthException('Registration failed: $e'));
