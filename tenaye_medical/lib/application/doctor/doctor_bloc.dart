@@ -53,6 +53,7 @@ class DoctorProfileBloc extends Bloc<DoctorProfileEvent, DoctorProfileState> {
     emit(DoctorProfileCertificateUpdateInProgressState());
     final result =
         await doctorRepository.updateCertificate(event.certificatePath);
+    
     result.fold(
       (failure) => emit(DoctorProfileFailureState(failure.toString())),
       (updatedDoctor) =>
