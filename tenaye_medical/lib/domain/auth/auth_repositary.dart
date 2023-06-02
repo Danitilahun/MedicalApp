@@ -12,6 +12,7 @@ class AuthRepository {
     String email,
     String password,
     String username,
+    
   ) async {
     final validation =
         RegisterDTOValidation.validate(email, username, password);
