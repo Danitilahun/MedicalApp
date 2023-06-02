@@ -10,6 +10,7 @@ class LoginDTOValidation {
     if (password.isEmpty) {
       return Left('Password is required.');
     }
+    
 
     final emailValidation = _validateEmail(email);
     if (emailValidation.isLeft()) {
