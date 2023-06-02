@@ -9,6 +9,7 @@ class RegisterDTO {
     required this.password,
   });
 
+  
   factory RegisterDTO.fromJson(Map<String, dynamic> json) {
     return RegisterDTO(
       email: json['email'],
