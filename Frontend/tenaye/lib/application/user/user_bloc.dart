@@ -10,6 +10,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
   final UserRepository userRepository = UserRepository();
 
   ProfileBloc() : super(ProfileLoadingState()) {
+    
     on<GetUserEvent>(_getUserEvent);
     on<UpdateProfileEvent>(_updateProfileEvent);
     on<UpdateProfileImageEvent>(_updateProfileImageEvent);
