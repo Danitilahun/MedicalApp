@@ -37,12 +37,5 @@ class RatingRepository {
     }
   }
 
-  Future<Either<RatingException, void>> deleteRating(String ratingId) async {
-    try {
-      await ratingDataProvider.deleteRating(ratingId);
-      return Right(null);
-    } catch (e) {
-      return Left(RatingException('Failed to delete rating: $e'));
-    }
-  }
+  
 }
