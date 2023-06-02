@@ -6,6 +6,7 @@ abstract class ProfileEvent {}
 
 class GetUserEvent extends ProfileEvent {}
 
+
 class UpdateProfileEvent extends ProfileEvent {
   final User user;
 
