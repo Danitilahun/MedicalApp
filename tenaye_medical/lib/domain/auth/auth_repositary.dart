@@ -16,6 +16,7 @@ class AuthRepository {
   ) async {
     final validation =
         RegisterDTOValidation.validate(email, username, password);
+    
     if (validation.isLeft()) {
       return Left(AuthException(validation.fold((error) => error, (_) => '')));
     }
