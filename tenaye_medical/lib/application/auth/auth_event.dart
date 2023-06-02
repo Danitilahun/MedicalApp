@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 abstract class AuthEvent {}
 
+
 class LoggedIn extends AuthEvent {
   final String? role;
   final String? id;
