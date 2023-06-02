@@ -17,6 +17,7 @@ class ServerErrorException extends AuthException {
   ServerErrorException() : super('Server error occurred.');
 }
 
+
 class NetworkErrorException extends AuthException {
   NetworkErrorException() : super('Network error occurred.');
 }
