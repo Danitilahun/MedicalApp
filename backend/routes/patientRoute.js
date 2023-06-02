@@ -28,7 +28,6 @@ router.get(
   authorize("user"),
   patient.getProfile
 );
-
 // Updates patient profile including USERNAME and PASSWORD here
 router.put(
   "/profile/:id",
