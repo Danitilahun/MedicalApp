@@ -5,7 +5,6 @@ const appointmentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  
   userId: { type: String, required: true },
   bookTime: { type: String, required: true },
   reason: { type: String, default: "" },
