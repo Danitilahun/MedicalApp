@@ -24,6 +24,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
     on<LoggedIn>(
       (event, emit) async {
+        
         emit(AuthLoading());
         await sharedPreferences.setString('id', event.id!);
         await sharedPreferences.setString('accessToken', event.token!);
