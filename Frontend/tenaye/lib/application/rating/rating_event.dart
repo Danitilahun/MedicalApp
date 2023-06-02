@@ -9,6 +9,7 @@ abstract class RatingEvent extends Equatable {
   List<Object?> get props => [];
 }
 
+
 class PostRatingEvent extends RatingEvent {
   final Rating rating;
 
