@@ -50,6 +50,7 @@ class Doctor {
     );
   }
 
+  
   Map<String, dynamic> toJson() {
     return {
       '_id': id,
