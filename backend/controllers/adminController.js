@@ -19,6 +19,7 @@ module.exports = {
     }
   },
 
+  
   updateProfile: async (req, res) => {
     try {
       const adminId = req.params.id;
