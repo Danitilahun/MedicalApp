@@ -10,6 +10,7 @@ class LoggedIn extends AuthEvent {
   LoggedIn({this.role, this.id, this.token});
 }
 
+
 class CheckLogIn extends AuthEvent {}
 
 class LogOut extends AuthEvent {}
