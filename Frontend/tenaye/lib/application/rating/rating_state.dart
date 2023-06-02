@@ -17,6 +17,7 @@ class RatingLoading extends RatingState {}
 class RatingSuccess extends RatingState {
   final List<Rating> ratings;
 
+  
   RatingSuccess(this.ratings);
 
   @override
