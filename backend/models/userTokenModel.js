@@ -8,6 +8,7 @@ const userTokenSchema = new Schema({
     createdAt: { type: Date, default: Date.now, expires: 365 * 86400 }, // 1 year
 });
 
+
 const UserToken = mongoose.model("UserToken", userTokenSchema);
 
 module.exports =  UserToken;
